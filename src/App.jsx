@@ -1,9 +1,9 @@
 import './App.css';
+import { evaluate } from 'mathjs';
 import { useState } from 'react';
 
 function App() {
   const [message, setMessage] = useState("");
-  const [toggle, setToggle] = useState(true);
   const keys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "." , "+", "-", "*", "/", "C", "CE"];
 
   const handleClick = (key) => {
